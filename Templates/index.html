@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Список подарков</title>
+  </head>
+  <body>
+    <h1>Список подарков</h1>
+    <table border="1">
+    <style>
+      td {
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+      <tr>
+        <th> № п/п </th>
+        <th> Семья </th>
+        <th> Подарок взрослым </th>
+        <th> Подарок детям </th>
+        <th> Статус покупки </th>
+      </tr>
+      {% for frends in frends %}
+      <tr>
+        <td>{{ frends[0] }}</td>
+        <td>{{ frends[1] }}</td>
+        <td>{{ frends[2] }}</td>
+        <td>{{ frends[3] }}</td>
+        <td>{{ frends[4] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
